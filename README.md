@@ -50,12 +50,30 @@ AZURE_OPENAI_EMBEDDING_DEPLOYMENT="text-embedding-3-large"  # for s2_ai_search
 
 We will go through the following labs:
 - Single Agent: `s1_single_agent/`
-- Ai Search: `s2_ai_search/`
+- AI Search: `s2_ai_search/`
 - Multi-Agent: `s3_multi_agent/`
 
-run the lab with the following command:
+
+1. Activate the virtual environment
+```bash
+.venv\Scripts\activate     # Windows PowerShell
+
+source .venv/bin/activate   # Mac/Linux
+```
+2. Test the environment with the following command:
+```bash
+python s3_multi_agent/0_setup/test_azure_ai_agent.py
+
+python s3_multi_agent/0_setup/test_chat_completion.py
+
+python s3_multi_agent/0_setup/test_multi_agent.py
+```
+
+3. Run the lab with the following command:
 ```bash
 python s1_single_agent/lab_name.py
+
+# ... etc
 ```
 
 
